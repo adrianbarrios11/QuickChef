@@ -1,5 +1,6 @@
 # QuickChef - Efficiency at its finest
 QuickChef is a smart kitchen management tool that helps small bars optimise their cooking process by automating order prioritisation, improving efficiency, and ensuring dishes are prepared in the most timely and organised manner.
+
 # Table of Contents
 * Introduction
 * Installation
@@ -12,8 +13,7 @@ QuickChef solves the problem of inefficiency and disorganisation in small bar ki
 Unlike many kitchen management tools that primarily focus on inventory tracking or staff management, QuickChef's core feature is optimising cooking times and the order of meal preparation. By automating the cooking process and organising the kitchen queue, QuickChef ensures that meals are prepared efficiently and served on time.
 
 ## Installation
-In order for the program to work, PyCharm must be installed in your computer. No further installations or software is required
-Usage
+In order for the program to work, download the files in this repository and store them locally in your computer. Run the app.py file assuming you have python3 installed.
 
 QuickChef counts with multiple interfaces that work together for all staff members. In order to access this interface, you will be asked to log in Username and Password, that will be the following:
 * Username: admin
