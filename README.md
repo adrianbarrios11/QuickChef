@@ -1,6 +1,28 @@
 # QuickChef - Efficiency at its finest
 QuickChef is a smart kitchen management tool that helps small bars optimise their cooking process by automating order prioritisation, improving efficiency, and ensuring dishes are prepared in the most timely and organised manner.
 
+<div style="display: flex; justify-content: space-between;">
+  <figure style="text-align: center; margin: 10px;">
+    <a href="Media/MainInterface.png" target="_blank">
+      <img src="image1.png" alt="Image 1" style="width: 200px; height: auto;">
+    </a>
+    <figcaption>Caption for Image 1</figcaption>
+  </figure>
+  <figure style="text-align: center; margin: 10px;">
+    <a href="Media/ChefInterface.png" target="_blank">
+      <img src="image2.png" alt="Image 2" style="width: 200px; height: auto;">
+    </a>
+    <figcaption>Caption for Image 2</figcaption>
+  </figure>
+  <figure style="text-align: center; margin: 10px;">
+    <a href="Media/WaiterInterface.png" target="_blank">
+      <img src="image3.png" alt="Image 3" style="width: 200px; height: auto;">
+    </a>
+    <figcaption>Caption for Image 3</figcaption>
+  </figure>
+</div>
+
+
 # Table of Contents
 * Introduction
 * Installation
