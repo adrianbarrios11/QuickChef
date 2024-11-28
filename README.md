@@ -69,20 +69,22 @@ When selecting this option, the program will be quitted completely, therefore, a
 
 # Features
 Waiters will be able to: 
-Waiters will be able to directly annotate orders into the system, selecting directly from the menu that will be in front of them. No intermediate steps needed.
-Enter the table number for which the order has been taken.
-Waiters can view all orders added to the system, allowing them to check for mistakes.
+
+* Annotate orders into the system, selecting directly from the menu that will be in front of them. No intermediate steps needed.
+* Enter the table number for which the order has been taken.
+* View all orders added to the system, allowing them to check for mistakes.
+
 Chefs will be able to: 
-Chefs can access the order list and start the cooking queue.
-Chefs will be able to organise which dishes are being cooked simultaneously.
-Chefs will always be able to read the current queue of orders, while they are cooking
-Chefs can mark dishes as completed, allowing the queue to move over and asking for the waiter to pick it up
+
+* Access the order list and start the cooking queue.
+* Organise which dishes are being cooked simultaneously.
+* Read the current queue of orders, while they are cooking.
+* Mark dishes as completed, allowing the queue to move over and asking for the waiter to pick it up.
 
 # Main Considerations:
 In order to prevent undesired deletions when running the code several times, whenever we add a recipe, all of its characteristics will be stored into a csv file we named Menu.csv, The function will extend this csv file when new recipes are added. 
 
 There is a constraint of 5 ( 3 tapas, 2 main) dishes being displayed in the chef interface at the same time to  prevent information overload for the chef . Of course, the queue will still be beyond this limit, it will just not print on the chef’s screen. Whenever a dish is marked as completed, the next one in the queue will start appearing on the screen.
-
 
 There are two queuing approaches that our algorithm focuses on. FIFO (for tapas) and priority queues for main dishes. The nature of these dishes are different, therefore these two parallel approaches are taken for queuing the dishes. Tapas do not take much time to create and are expected to be delivered quickly, therefore a First In First Out approach will be enough. However, for main dishes, durations affect the most efficient way of doing these dishes, therefore, they are more efficiently organised with priority queues, starting orders with longest duration first.
 
