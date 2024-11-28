@@ -13,7 +13,7 @@ QuickChef solves the problem of inefficiency and disorganisation in small bar ki
 Unlike many kitchen management tools that primarily focus on inventory tracking or staff management, QuickChef's core feature is optimising cooking times and the order of meal preparation. By automating the cooking process and organising the kitchen queue, QuickChef ensures that meals are prepared efficiently and served on time.
 
 ## Installation
-In order for the program to work, download the files in this repository and store them locally in your computer. Run the app.py file assuming you have python3 installed.
+In order for the program to work, download the files in this repository and store them locally in your computer. Run the app.py file assuming you have python3 installed. The program was developed in PyCharm 2024.2.4 (Professional Edition)
 
 QuickChef counts with multiple interfaces that work together for all staff members. In order to access this interface, you will be asked to log in Username and Password, that will be the following:
 * Username: admin
@@ -33,7 +33,9 @@ Within the chef’s interface, you are able to:
 
 * View Completed Orders (1.4): This functionality will display the orders that have been already marked as complete by the chef, in order to check the history of orders, or check if a dish has been marked as complete by mistake.
 
-* Return to Main Menu (1.5): When pressing this key, the main menu will display again, giving the options to choose between chef or waiter interface again.
+* Remove Menu Item (1.5): This functionality will prompt the user to remove an item from the menu.
+
+* Return to Main Menu (1.6): When pressing this key, the main menu will display again, giving the options to choose between chef or waiter interface again.
 
 # Waiter Interface (2): 
 
