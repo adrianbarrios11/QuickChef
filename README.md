@@ -43,7 +43,9 @@ Within the chef’s interface, you are able to:
 
 * View Orders (2.2): This option will display all the orders that have been recorded by the waiter and are waiting to be “cooked” by the chef.
 
-* Return to Main Menu (2.3): When pressing this key, the main menu will display again, giving the options to choose between chef and waiter interface again.
+* Display Menu (2.3): This will display the menu, which is stored as a csv file.
+
+* Return to Main Menu (2.4): When pressing this key, the main menu will display again, giving the options to choose between chef and waiter interface again.
 
 # Add a new recipe (3):
 When you choose this option, you will be prompted to indicate all of the details about this dish to make it work correctly with the algorithm. 
