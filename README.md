@@ -4,14 +4,13 @@ QuickChef is a smart kitchen management tool that helps small bars optimise thei
 | [![Image 1](Media/MainInterface.png)](Media/MainInterface.png) Main Interface | [![Image 2](Media/ChefInterface.png)](Media/ChefInterface.png) Chef Interface | [![Image 3](Media/WaiterInterface.png)](Media/WaiterInterface.png) Waiter Interface |
 |----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|
 
-
-
 # Table of Contents
 * Introduction
 * Installation
 * Usage
 * Features
 * Credits
+  
 # Introduction
 QuickChef solves the problem of inefficiency and disorganisation in small bar kitchens by automating order prioritisation and streamlining the cooking process. It helps ensure that dishes are prepared in the right order, at the right time, and with minimal delays, improving kitchen workflow and overall customer satisfaction.
 
@@ -23,9 +22,9 @@ In order for the program to work, download the following files in this repositor
 * QuickChefApp.py
 Run the QuickChefApp.py file assuming you have python3 installed. The program was developed in PyCharm 2024.2.4 (Professional Edition)
 
-The libraries used should come preinstalled with python3. If one of them is not pre-installed for you, you can run the following command in your terminal.
+The libraries used should come preinstalled with python3. If one of them is not pre-installed for you, you can run the following command in your terminal:
 
-pip install <name_of_missing_library>
+**pip install <name_of_missing_library>**
 
 Once all the requirements have been met, you should see a display on your screem. In order to access this interface, you will be asked to log in Username and Password, that will be the following:
 * Username: admin
