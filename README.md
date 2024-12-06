@@ -26,6 +26,8 @@ The libraries used should come preinstalled with python3. If one of them is not 
 
 **pip install <name_of_missing_library>**
 
+Using an IDE such as VSCODE (Free for Mac Users) or Pycharm can be useful. You need to ensure that you are running the main app in the same location where the Menu.csv is saved. If not, the program will not be able to read off of it.
+
 Once all the requirements have been met, you should see a display on your screem. In order to access this interface, you will be asked to log in Username and Password, that will be the following:
 * Username: admin
 * Password :admin123
