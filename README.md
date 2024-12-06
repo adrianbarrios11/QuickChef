@@ -91,6 +91,8 @@ There is a constraint of 5 dishes (3 tapas, 2 main) being displayed in the chef 
 
 There are two queuing approaches that our algorithm focuses on. FIFO (for tapas) and priority queues for main dishes. The nature of these dishes are different, therefore these two parallel approaches are taken for queuing the dishes. Tapas do not take much time to create and are expected to be delivered quickly, therefore a First In First Out approach will be enough. However, for main dishes, durations affect the most efficient way of doing these dishes, therefore, they are more efficiently organised with priority queues, starting orders with longest duration first.
 
+The program is mainly centered around Sorting as an algorithm
+
 # Further Improvements
 
 The interface for this project serves as a satisfiable MVP, but could be made more aesthetic. Through the use of Tkinter, we managed to create a simple, yet useful interface for users to interact with. However, through the use of  HTML and CSS we could potentially improve the visual appeal of the final product.
