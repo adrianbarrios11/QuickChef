@@ -427,9 +427,6 @@ class KitchenQueueSystemGUI:
         tk.Button(self.root, text="Back to Main Menu", font=("Arial", 14), command=self.main_menu, width=20).pack(
             pady=10)
 
-        tk.Button(self.root, text="Back to Main Menu", font=("Arial", 14), command=self.main_menu, width=20).pack(
-            pady=10)
-
     def add_order(self):
         self.clear_screen()
         tk.Label(self.root, text="Add New Order", font=("Arial", 18)).pack(pady=20)
