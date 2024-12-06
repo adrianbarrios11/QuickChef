@@ -85,6 +85,9 @@ Chefs will be able to:
 * Modify the menu
 
 # Main Considerations:
+
+The images shown above belong to a mockup website made using the lovely.app. It represents an ideal final version with a more appealing UI. However, to implement the missing functionalities manually, we have chosen to use Tkinter Python interface.
+
 In order to prevent undesired deletions when running the code several times, whenever we add a recipe, all of its characteristics will be stored into a csv file we named Menu.csv, The function will extend this csv file when new recipes are added. 
 
 There is a constraint of 5 dishes (3 tapas, 2 main) being displayed in the chef interface at the same time to  prevent information overload for the chef . Of course, the queue will still be beyond this limit, it will just not print on the chef’s screen.
