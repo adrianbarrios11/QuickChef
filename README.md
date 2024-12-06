@@ -1,6 +1,10 @@
 # QuickChef - Efficiency at its finest
 QuickChef is a smart kitchen management tool that helps small bars optimise their cooking process by automating order prioritisation, improving efficiency, and ensuring dishes are prepared in the most timely and organised manner.
 
+If you wish to access the directory through Github, use the following link:
+
+https://github.com/adrianbarrios11/QuickChef/tree/main
+
 | [![Image 1](Media/MainInterface.png)](Media/MainInterface.png) Main Interface | [![Image 2](Media/ChefInterface.png)](Media/ChefInterface.png) Chef Interface | [![Image 3](Media/WaiterInterface.png)](Media/WaiterInterface.png) Waiter Interface |
 |----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|
 
