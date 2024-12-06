@@ -62,7 +62,7 @@ Within the chef’s interface, you are able to:
 
 * Return to Main Menu (2.4): When pressing this key, the main menu will display again, giving the options to choose between chef and waiter interface again.
 
-# Exit (4):
+# Exit (3):
 When selecting this option, the program will be quitted completely, therefore, a new session will be started again next time you enter QuickChef. This means the user will need to log in with the same credentials. Orders will be saved in the CSV file, meaning you won't have to create the recipes every time.
 
 # Features
