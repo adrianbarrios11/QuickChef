@@ -17,20 +17,29 @@ QuickChef solves the problem of inefficiency and disorganisation in small bar ki
 
 Unlike many kitchen management tools that primarily focus on inventory tracking or staff management, QuickChef's core feature is optimising cooking times and the order of meal preparation. By automating the cooking process and organising the kitchen queue, QuickChef ensures that meals are prepared efficiently and served on time.
 
-## Installation
-In order for the program to work, download the files in this repository and store them locally in your computer. Run the app.py file assuming you have python3 installed. The program was developed in PyCharm 2024.2.4 (Professional Edition)
+## Installation and Requirements
+In order for the program to work, download the following files in this repository and store them locally in your computer.
+* Menu.csv
+* QuickChefApp.py
+Run the QuickChefApp.py file assuming you have python3 installed. The program was developed in PyCharm 2024.2.4 (Professional Edition)
 
-QuickChef counts with multiple interfaces that work together for all staff members. In order to access this interface, you will be asked to log in Username and Password, that will be the following:
+The libraries used should come preinstalled with python3. If one of them is not pre-installed for you, you can run the following command in your terminal.
+
+pip install <name_of_missing_library>
+
+Once all the requirements have been met, you should see a display on your screem. In order to access this interface, you will be asked to log in Username and Password, that will be the following:
 * Username: admin
 * Password :admin123
 
 Once this has been done, you will have access to the main menu, showing different interfaces.
-Whether you are a chef or a waiter at the restaurant, you will have your own interface. The interfaces included in the program are two. Chef interface and Waiter interface, where the characteristics of each of them are the following.
+Whether you are a chef or a waiter at the restaurant, there is an interface for each. The interfaces included in the program are two. Chef interface and Waiter interface, where the characteristics of each of them are the following.
 
 # Chef Interface (1):
 Within the chef’s interface, you are able to:
 
-* Start Cooking (1.1 ): This option will take all of the existing orders added by the waiter in order, following the criteria we previously established, depending on the type of dish it is. These orders will display on the chef interface, ready for him to start cooking following that order.
+* View Orders (1.1): This option will allow you to visualize the current orders that the waiter has recorded, and which have not been prepared yet. From this interface you can return to either interface using the buttons below.
+
+* Start Cooking (1.2): This option will take tapas and main dishes from the orders and put them in queues, ensuring there are never more than 3 tapas and 2 main dishes being prepared at the same time. It will always take the main dishes based on a time criteria. The tapas are added in a FIFO manner.
 
 * View Currently Preparing Orders (1.2): This functionality will display the orders that are currently being prepared, after they have been selected by the StartCooking method. Their time complexity will be displayed.
 
@@ -38,34 +47,22 @@ Within the chef’s interface, you are able to:
 
 * View Completed Orders (1.4): This functionality will display the orders that have been already marked as complete by the chef, in order to check the history of orders, or check if a dish has been marked as complete by mistake.
 
-* Remove Menu Item (1.5): This functionality will prompt the user to remove an item from the menu.
+* Menu Management (1.5): This will take you into a subinterface where we can interact with the menu. You will be able to create, delete, or modify items on the menu. A gambas recipe is already included within the menu when you download our CSV.
 
-* Return to Main Menu (1.6): When pressing this key, the main menu will display again, giving the options to choose between chef or waiter interface again.
+* Return to Main Menu (1.6): When pressing this key, the main interface display again, giving the options to choose between chef or waiter interface again.
 
 # Waiter Interface (2): 
 
-* Add New Order (2.1): In this section, the waiter will be able to add a new order, selecting any of the previous dishes added with the add a recipe function, stored in the menu. These orders will be sent and our algorithm will process it. After order has been added, information will appear correctly ordered in the chef interface.
+* Add New Order (2.1): In this section, the waiter will be able to add a new order, selecting any of the previous dishes added with the add a recipe function, stored in the menu. These orders will be sent and our algorithm will process it. After order has been added, the chef can start cooking it in his interface.
 
 * View Orders (2.2): This option will display all the orders that have been recorded by the waiter and are waiting to be “cooked” by the chef.
 
-* Display Menu (2.3): This will display the menu, which is stored as a csv file.
+* Display Menu (2.3): This will display the menu, which is stored as a csv file. It will show the name, preparation time, type (main dish or tapas) and ingredients.
 
 * Return to Main Menu (2.4): When pressing this key, the main menu will display again, giving the options to choose between chef and waiter interface again.
 
-# Add a new recipe (3):
-When you choose this option, you will be prompted to indicate all of the details about this dish to make it work correctly with the algorithm. 
- 
-These details are:
-
-* Name of the recipe
-* Type of recipe tapas / main dish
-* Ingredients (separated by commas)
-* Time taken to complete the recipe
-
-
-
 # Exit (4):
-When selecting this option, the program will be quitted completely, therefore, a new session will be started again next time you enter QuickChef. This means the user will need to log in with the same credentials. Orders will need to be added again, and all of the process will start from the beginning, however recipes wont be deleted.
+When selecting this option, the program will be quitted completely, therefore, a new session will be started again next time you enter QuickChef. This means the user will need to log in with the same credentials. Orders will be saved in the CSV file, meaning you won't have to create the recipes every time.
 
 # Features
 Waiters will be able to: 
@@ -77,18 +74,16 @@ Waiters will be able to:
 Chefs will be able to: 
 
 * Access the order list and start the cooking queue.
-* Organise which dishes are being cooked simultaneously.
 * Read the current queue of orders, while they are cooking.
 * Mark dishes as completed, allowing the queue to move over and asking for the waiter to pick it up.
+* Modify the menu
 
 # Main Considerations:
 In order to prevent undesired deletions when running the code several times, whenever we add a recipe, all of its characteristics will be stored into a csv file we named Menu.csv, The function will extend this csv file when new recipes are added. 
 
-There is a constraint of 5 dishes (3 tapas, 2 main) being displayed in the chef interface at the same time to  prevent information overload for the chef . Of course, the queue will still be beyond this limit, it will just not print on the chef’s screen. Whenever a dish is marked as completed, the next one in the queue will start appearing on the screen.
+There is a constraint of 5 dishes (3 tapas, 2 main) being displayed in the chef interface at the same time to  prevent information overload for the chef . Of course, the queue will still be beyond this limit, it will just not print on the chef’s screen.
 
 There are two queuing approaches that our algorithm focuses on. FIFO (for tapas) and priority queues for main dishes. The nature of these dishes are different, therefore these two parallel approaches are taken for queuing the dishes. Tapas do not take much time to create and are expected to be delivered quickly, therefore a First In First Out approach will be enough. However, for main dishes, durations affect the most efficient way of doing these dishes, therefore, they are more efficiently organised with priority queues, starting orders with longest duration first.
-
-In order to make the commands in a much easier and quicker way for the waiter. The interface allows adding multiple dishes at a time to the queue, without needing to input the dishes being ordered one by one.
 
 # Credits
 * Adrian Barrios
