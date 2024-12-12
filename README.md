@@ -14,7 +14,7 @@ https://github.com/adrianbarrios11/QuickChef/tree/main
 * [Usage](#usage)
 * [Features](#features)
 * [Considerations](#considerations)
-* [Further Improvements](#further--improvements)
+* [Further Improvements](#Further-Improvements)
 * [Credits](#credits)
   
 # Introduction
