@@ -23,6 +23,7 @@ QuickChef solves the problem of inefficiency and disorganisation in small bar ki
 Unlike many kitchen management tools that primarily focus on inventory tracking or staff management, QuickChef's core feature is optimising cooking times and the order of meal preparation. By automating the cooking process and organising the kitchen queue, QuickChef ensures that meals are prepared efficiently and served on time.
 
 ## Installation
+This was developed using Python 3.13.0 in macOS. 
 In order for the program to work, download the following files as a zip from this repository and store them locally in your computer. The most important files are:
 * Menu.csv
 * QuickChefApp.py
@@ -36,6 +37,16 @@ Run the QuickChefApp.py file. The program was developed in PyCharm 2024.2.4 (Pro
 The libraries used should come preinstalled with python3. If one of them is not pre-installed for you, you can run the following command in your terminal:
 
 **pip install <name_of_missing_library>**
+
+Libraries used:
+* tkinter
+* messagebox
+* PriorityQueue
+* datetime
+* dateclass
+* List
+* csv
+* os
 
 Using an IDE such as VSCODE (Free for Mac Users) or Pycharm can be useful. You need to ensure that you are running the main app in the same location where the Menu.csv is saved. If not, the program will not be able to read off of it.
 
