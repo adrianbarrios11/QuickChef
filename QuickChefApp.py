@@ -42,7 +42,7 @@ class KitchenQueueSystemGUI:
         self.tapas_orders = []  # Orders for tapas
         self.main_dish_orders = []  # Orders for main dishes
         self.available_dishes = []  # This will be populated dynamically
-        self.load_menu(current_dir + "Menu.csv")  # Load the menu from the CSV file
+        self.load_menu(current_dir + "/Menu.csv")  # Load the menu from the CSV file
         self.create_login_screen()
 
     def load_menu(self, file_path):
@@ -267,7 +267,7 @@ class KitchenQueueSystemGUI:
 
         # Save the new dish to the CSV file
         try:
-            with open(current_dir + "Menu.csv", mode='a', encoding='utf-8', newline='') as file:
+            with open(current_dir + "/Menu.csv", mode='a', encoding='utf-8', newline='') as file:
                 writer = csv.writer(file)
                 writer.writerow([name, prep_time, dish_type, ingredients])
 
@@ -321,7 +321,7 @@ class KitchenQueueSystemGUI:
     def update_menu_csv(self):
 
         try:
-            with open(current_dir + "Menu.csv", mode='w', encoding='utf-8', newline='') as file:
+            with open(current_dir + "/Menu.csv", mode='w', encoding='utf-8', newline='') as file:
                 writer = csv.writer(file)
                 writer.writerow(["name", "prep_time", "type", "ingredients"])  # Write the header
                 for dish in self.available_dishes:
@@ -404,7 +404,7 @@ class KitchenQueueSystemGUI:
 
         # Update the CSV file
         try:
-            with open(current_dir + "Menu.csv", mode="w", encoding="utf-8", newline="") as file:
+            with open(current_dir + "/Menu.csv", mode="w", encoding="utf-8", newline="") as file:
                 writer = csv.writer(file)
                 writer.writerow(["name", "prep_time", "type", "ingredients"])  # Write header
                 for dish in self.available_dishes:
