@@ -9,18 +9,20 @@ https://github.com/adrianbarrios11/QuickChef/tree/main
 |----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|
 
 # Table of Contents
-* Introduction
-* Installation
-* Usage
-* Features
-* Credits
+* [Introduction](#Introduction)
+* [Installation](#Installation)
+* [Usage](#usage)
+* [Features](#features)
+* [Considerations](#considerations)
+* [Further Improvements](#further--improvements)
+* [Credits](#credits)
   
 # Introduction
 QuickChef solves the problem of inefficiency and disorganisation in small bar kitchens by automating order prioritisation and streamlining the cooking process. It helps ensure that dishes are prepared in the right order, at the right time, and with minimal delays, improving kitchen workflow and overall customer satisfaction.
 
 Unlike many kitchen management tools that primarily focus on inventory tracking or staff management, QuickChef's core feature is optimising cooking times and the order of meal preparation. By automating the cooking process and organising the kitchen queue, QuickChef ensures that meals are prepared efficiently and served on time.
 
-## Installation and Requirements
+## Installation
 In order for the program to work, download the following files as a zip from this repository and store them locally in your computer. The most important files are:
 * Menu.csv
 * QuickChefApp.py
@@ -43,6 +45,8 @@ Once all the requirements have been met, you should see a display on your screem
 
 Once this has been done, you will have access to the main menu, showing different interfaces.
 Whether you are a chef or a waiter at the restaurant, there is an interface for each. The interfaces included in the program are two. Chef interface and Waiter interface, where the characteristics of each of them are the following.
+
+# Usage
 
 # Chef Interface (1):
 Within the chef’s interface, you are able to:
@@ -88,7 +92,7 @@ Chefs will be able to:
 * Mark dishes as completed, allowing the queue to move over and asking for the waiter to pick it up.
 * Modify the menu
 
-# Main Considerations:
+# Considerations:
 
 The images shown above belong to a mockup website made using the lovely.app. It represents an ideal final version with a more appealing UI. However, to implement the missing functionalities manually, we have chosen to use Tkinter Python interface.
 
